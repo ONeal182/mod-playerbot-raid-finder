@@ -1,0 +1,1 @@
+-- PlayerbotRaidFinder: the minimap button lives in UI.lua (works after /reload too).

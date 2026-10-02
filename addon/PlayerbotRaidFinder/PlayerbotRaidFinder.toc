@@ -1,0 +1,14 @@
+## Interface: 30300
+## Title: Playerbot Raid Finder
+## Title-ruRU: Поиск рейда (Playerbots)
+## Notes-ruRU: Поиск рейда (свободные места занимают Playerbots). /rf
+## Notes: Raid Finder UI for mod-playerbot-raid-finder (queue for raids, empty seats filled by Playerbots). /rf
+## Author: mod-playerbot-raid-finder
+## Version: 1.0
+## SavedVariablesPerCharacter: PlayerbotRaidFinderDB
+
+Localization.lua
+Core.lua
+Network.lua
+UI.lua
+Minimap.lua

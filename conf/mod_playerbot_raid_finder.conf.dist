@@ -1,0 +1,143 @@
+[worldserver]
+
+########################################
+# mod-playerbot-raid-finder
+#
+# Dungeon-Finder-style raid queue that fills empty seats with existing
+# Random Playerbots. Requires mod-playerbots.
+#
+# Raid definitions live in the world DB table `raid_finder_definition`
+# (data/sql/db-world). Without the table the built-in defaults are used:
+# NAXX/ULD/TOC/ICC 10 (2/2/6) and 25 (2/5/18).
+#
+# Logs: loggers "module.raidfinder.*" (queue, match, selector, reserve,
+# composition, group, proposal, teleport, addon, cleanup, error).
+########################################
+
+#    RaidFinder.Enable
+#        Master switch.
+#        Default: 1
+
+RaidFinder.Enable = 1
+
+#    RaidFinder.BotFillEnabled
+#        Fill empty seats with Random Playerbots.
+#        Default: 1
+
+RaidFinder.BotFillEnabled = 1
+
+#    RaidFinder.BotFillDelay
+#        Seconds real players get to fill a forming raid before bots are added.
+#        Default: 30
+
+RaidFinder.BotFillDelay = 30
+
+#    RaidFinder.MinRealPlayers
+#        Real players a forming raid needs before bot fill starts (min 1).
+#        Default: 1
+
+RaidFinder.MinRealPlayers = 1
+
+#    RaidFinder.MaxBotsPerRaid
+#        Upper limit of Playerbots in one raid (39 lets a 40-man raid fill with one real player).
+#        Default: 39
+
+RaidFinder.MaxBotsPerRaid = 39
+
+#    RaidFinder.AutoTeleport
+#        1 = teleport the raid to the instance after accept (leader first,
+#            then the other members in batches).
+#        0 = the leader walks in; members are sent once the leader is inside.
+#        Default: 1
+
+RaidFinder.AutoTeleport = 1
+
+#    RaidFinder.QueueTimeout
+#        Seconds a forming raid may search before it is cancelled (0 = never).
+#        Default: 1800
+
+RaidFinder.QueueTimeout = 1800
+
+#    RaidFinder.ProposalTimeout
+#        Seconds real players have to accept a raid proposal (min 10).
+#        Default: 45
+
+RaidFinder.ProposalTimeout = 45
+
+#    RaidFinder.EnterTimeout
+#        Seconds a single member may take to arrive in the instance (min 15).
+#        With AutoTeleport = 0 the leader gets 10x this value to walk in.
+#        Default: 120
+
+RaidFinder.EnterTimeout = 120
+
+#    RaidFinder.AbandonTimeout
+#        Seconds without any real player inside the instance before the raid
+#        is released and its bots freed (0 = never).
+#        Default: 600
+
+RaidFinder.AbandonTimeout = 600
+
+#    RaidFinder.RequireRoleBalance
+#        1 = a proposal needs the exact tank/healer/dps composition.
+#        0 = any eligible bot may take a leftover seat.
+#        Default: 1
+
+RaidFinder.RequireRoleBalance = 1
+
+#    RaidFinder.PreferRealPlayers
+#        1 = wait BotFillDelay for real players and let a joining real player
+#            replace a reserved bot of the same role.
+#        0 = fill with bots right away.
+#        Default: 1
+
+RaidFinder.PreferRealPlayers = 1
+
+#    RaidFinder.SameFactionOnly
+#        Bots must be of the raid leader's faction.
+#        Default: 1
+
+RaidFinder.SameFactionOnly = 1
+
+#    RaidFinder.AllowCrossFaction
+#        Real players of both factions may be matched into one raid.
+#        Default: 0
+
+RaidFinder.AllowCrossFaction = 0
+
+#    RaidFinder.TeleportBotsPerTick
+#        Bots teleported per teleport tick.
+#        Default: 3
+
+RaidFinder.TeleportBotsPerTick = 3
+
+#    RaidFinder.TeleportTickMs
+#        Milliseconds between teleport batches (min 100).
+#        Default: 1000
+
+RaidFinder.TeleportTickMs = 1000
+
+#    RaidFinder.StatusUpdateInterval
+#        Seconds between status pushes to addon users.
+#        Default: 5
+
+RaidFinder.StatusUpdateInterval = 5
+
+#    RaidFinder.GossipEnabled
+#        `.rf` opens the gossip menu; proposals pop the menu for players
+#        without the addon.
+#        Default: 1
+
+RaidFinder.GossipEnabled = 1
+
+#    RaidFinder.AddonEnabled
+#        Answer the PlayerbotRaidFinder addon (prefixes RFC / RF).
+#        Default: 1
+
+RaidFinder.AddonEnabled = 1
+
+#    RaidFinder.Debug
+#        Verbose selector/addon tracing (logged at DEBUG level). `.rf debug on`.
+#        Default: 0
+
+RaidFinder.Debug = 0

@@ -1,0 +1,35 @@
+-- mod-playerbot-raid-finder: Russian display names.
+
+UPDATE `raid_finder_definition` SET `display_name` = 'Огненные Недра' WHERE `display_name` = 'Molten Core';
+UPDATE `raid_finder_definition` SET `display_name` = 'Логово Крыла Тьмы' WHERE `display_name` = 'Blackwing Lair';
+UPDATE `raid_finder_definition` SET `display_name` = 'Зул''Гуруб' WHERE `display_name` = 'Zul''Gurub';
+UPDATE `raid_finder_definition` SET `display_name` = 'Руины Ан''Киража' WHERE `display_name` = 'Ruins of Ahn''Qiraj';
+UPDATE `raid_finder_definition` SET `display_name` = 'Логово Ониксии 40' WHERE `display_name` = 'Onyxia''s Lair 40';
+UPDATE `raid_finder_definition` SET `display_name` = 'Храм Ан''Киража' WHERE `display_name` = 'Temple of Ahn''Qiraj';
+UPDATE `raid_finder_definition` SET `display_name` = 'Каражан' WHERE `display_name` = 'Karazhan';
+UPDATE `raid_finder_definition` SET `display_name` = 'Зул''Аман' WHERE `display_name` = 'Zul''Aman';
+UPDATE `raid_finder_definition` SET `display_name` = 'Логово Груула' WHERE `display_name` = 'Gruul''s Lair';
+UPDATE `raid_finder_definition` SET `display_name` = 'Логово Магтеридона' WHERE `display_name` = 'Magtheridon''s Lair';
+UPDATE `raid_finder_definition` SET `display_name` = 'Змеиное святилище' WHERE `display_name` = 'Serpentshrine Cavern';
+UPDATE `raid_finder_definition` SET `display_name` = 'Крепость Бурь: Око' WHERE `display_name` = 'Tempest Keep: The Eye';
+UPDATE `raid_finder_definition` SET `display_name` = 'Битва за гору Хиджал' WHERE `display_name` = 'Battle for Mount Hyjal';
+UPDATE `raid_finder_definition` SET `display_name` = 'Черный храм' WHERE `display_name` = 'Black Temple';
+UPDATE `raid_finder_definition` SET `display_name` = 'Плато Солнечного Колодца' WHERE `display_name` = 'Sunwell Plateau';
+UPDATE `raid_finder_definition` SET `display_name` = 'Склеп Аркавона 10' WHERE `display_name` = 'Vault of Archavon 10';
+UPDATE `raid_finder_definition` SET `display_name` = 'Склеп Аркавона 25' WHERE `display_name` = 'Vault of Archavon 25';
+UPDATE `raid_finder_definition` SET `display_name` = 'Наксрамас 10' WHERE `display_name` = 'Naxxramas 10';
+UPDATE `raid_finder_definition` SET `display_name` = 'Наксрамас 25' WHERE `display_name` = 'Naxxramas 25';
+UPDATE `raid_finder_definition` SET `display_name` = 'Обсидиановое святилище 10' WHERE `display_name` = 'Obsidian Sanctum 10';
+UPDATE `raid_finder_definition` SET `display_name` = 'Обсидиановое святилище 25' WHERE `display_name` = 'Obsidian Sanctum 25';
+UPDATE `raid_finder_definition` SET `display_name` = 'Око Вечности 10' WHERE `display_name` = 'Eye of Eternity 10';
+UPDATE `raid_finder_definition` SET `display_name` = 'Око Вечности 25' WHERE `display_name` = 'Eye of Eternity 25';
+UPDATE `raid_finder_definition` SET `display_name` = 'Логово Ониксии 10' WHERE `display_name` = 'Onyxia''s Lair 10';
+UPDATE `raid_finder_definition` SET `display_name` = 'Логово Ониксии 25' WHERE `display_name` = 'Onyxia''s Lair 25';
+UPDATE `raid_finder_definition` SET `display_name` = 'Ульдуар 10' WHERE `display_name` = 'Ulduar 10';
+UPDATE `raid_finder_definition` SET `display_name` = 'Ульдуар 25' WHERE `display_name` = 'Ulduar 25';
+UPDATE `raid_finder_definition` SET `display_name` = 'Испытание крестоносца 10' WHERE `display_name` = 'Trial of the Crusader 10';
+UPDATE `raid_finder_definition` SET `display_name` = 'Испытание крестоносца 25' WHERE `display_name` = 'Trial of the Crusader 25';
+UPDATE `raid_finder_definition` SET `display_name` = 'Цитадель Ледяной Короны 10' WHERE `display_name` = 'Icecrown Citadel 10';
+UPDATE `raid_finder_definition` SET `display_name` = 'Цитадель Ледяной Короны 25' WHERE `display_name` = 'Icecrown Citadel 25';
+UPDATE `raid_finder_definition` SET `display_name` = 'Рубиновое святилище 10' WHERE `display_name` = 'Ruby Sanctum 10';
+UPDATE `raid_finder_definition` SET `display_name` = 'Рубиновое святилище 25' WHERE `display_name` = 'Ruby Sanctum 25';
